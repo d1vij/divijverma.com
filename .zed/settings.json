@@ -1,0 +1,10 @@
+{
+    "languages": {
+        "Svelte": {
+            "language_servers": ["!biome", "..."],
+        },
+        "TypeScript": {
+            "language_servers": ["!biome", "..."],
+        },
+    },
+}
