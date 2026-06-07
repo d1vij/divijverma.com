@@ -113,6 +113,7 @@ body {
 }
 
 
-/** {
-    border: solid 0.5px #ff000020 !important;
-}*/
+* {
+    /*outline: solid 0.5px #ff000020 !important;*/
+    scrollbar-width: none;
+}

@@ -2,6 +2,7 @@
     import { vibrateOnClick } from "@d1vij/shit-i-always-use/svelte";
     import { ArrowUpRight, Asterisk } from "@lucide/svelte";
     import { resolve } from "$app/paths";
+    import E from "$lib/components/E";
 </script>
 
 <!-- Hero -->
@@ -29,31 +30,27 @@
 
     <header class="flex items-center justify-between font-serif">
         <Asterisk class="block size-5 stroke-text-secondary" />
-        <nav class="flex items-center justify-end">
+        <nav class="flex items-center justify-end py-1">
             {@render Link("Blogs", resolve("/blogs"))}
             {@render Link("Contact", resolve("/contact"))}
         </nav>
     </header>
 {/snippet}
 
-<section
-    class={[
-        "text-text-primary-dark flex h-dvh w-full flex-col bg-theme",
-        "p-2 pt-0 md:px-8 md:pt-0",
-    ]}
->
+<section class={["text-text-primary-dark flex h-dvh w-dvw flex-col bg-theme", "p-2 pt-0 md:px-8"]}>
     <div
         class={[
-            "h-full rounded-xl rounded-t-none bg-background p-6 pt-2 md:p-16",
+            "h-full rounded-xl rounded-t-none bg-background",
+            "p-6 pt-2 md:p-16",
             "flex flex-col justify-between",
 
             "border-2 border-border",
         ]}
     >
-        <div>
+        <div class="space-y-6">
             {@render Header()}
-            <div class="mt-6 md:space-y-3">
-                <h1 class="block font-serif text-7xl font-bold md:text-8xl">Divij Verma</h1>
+            <div class=" md:space-y-3">
+                <E.H1>Divij Verma</E.H1>
                 <h2 class="text-xs font-medium text-text-muted md:text-base">
                     Engineering Undergrad @ VIT Vellore
                 </h2>
