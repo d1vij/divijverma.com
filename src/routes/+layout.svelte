@@ -17,7 +17,21 @@
     />
     <link
         rel="preload"
+        href="/fonts/UntitledSans/ttf/UntitledSans-Medium.ttf"
+        as="font"
+        type="font/ttf"
+        crossorigin=""
+    />
+    <link
+        rel="preload"
         href="/fonts/UntitledSerif/ttf/UntitledSerif-Regular.ttf"
+        as="font"
+        type="font/ttf"
+        crossorigin=""
+    />
+    <link
+        rel="preload"
+        href="/fonts/UntitledSerif/ttf/UntitledSerif-Medium.ttf"
         as="font"
         type="font/ttf"
         crossorigin=""
