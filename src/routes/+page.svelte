@@ -3,9 +3,8 @@
     import { ArrowUpRight, Asterisk } from "@lucide/svelte";
     import { resolve } from "$app/paths";
     import E from "$lib/components/E";
+    import Layout from "$lib/components/Layout.svelte";
 </script>
-
-<!-- Hero -->
 
 {#snippet Header()}
     {#snippet Link(title: string, href: string)}
@@ -15,7 +14,7 @@
                 "group",
                 "text-muted over:text-text-secondary px-[1ch]",
                 "transition-all",
-                "flex items-center gap-1",
+                "flex items-center gap-1 select-none",
             ]}
             {@attach vibrateOnClick(50)}
         >
@@ -31,22 +30,16 @@
     <header class="flex items-center justify-between font-serif">
         <Asterisk class="block size-5 stroke-text-secondary" />
         <nav class="flex items-center justify-end py-1">
-            {@render Link("Blogs", resolve("/blogs"))}
             {@render Link("Contact", resolve("/contact"))}
+            {@render Link("Blogs", resolve("/blogs"))}
+            {@render Link("/dev/random", resolve("/random"))}
         </nav>
     </header>
 {/snippet}
 
-<section class={["text-text-primary-dark flex h-dvh w-dvw flex-col bg-theme", "p-2 pt-0 md:px-8"]}>
-    <div
-        class={[
-            "h-full rounded-xl rounded-t-none bg-background",
-            "p-6 pt-2 md:p-16",
-            "flex flex-col justify-between",
-
-            "border-2 border-border",
-        ]}
-    >
+<!-- Hero -->
+<Layout>
+    <div class="flex size-full flex-col justify-between">
         <div class="space-y-6">
             {@render Header()}
             <div class=" md:space-y-3">
@@ -78,8 +71,16 @@
             </p>
         </div>
     </div>
+</Layout>
+
+<section class={["min-h-dvh w-dvw bg-theme text-text-on-dark", "p-6 pt-2 md:p-16"]}>
+    <E.H1>Work Experience</E.H1>
 </section>
 
-<section class="h-dvh w-dvw bg-theme"></section>
+<section class={["min-h-dvh w-dvw rounded-xl bg-background", "space-y-8 p-6 pt-2 md:p-16"]}>
+    <E.H1>Projects</E.H1>
 
-<section class="h-dvh w-dvw rounded-xl bg-background"></section>
+    <ul>
+        <div class={["size-40 p-8", "rounded border border-border bg-surface shadow"]}></div>
+    </ul>
+</section>
