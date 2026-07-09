@@ -5,6 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite dev",
+        "prebuild":"bun gen",
         "build": "wrangler types --check && vite build",
         "preview": "wrangler dev .svelte-kit/cloudflare/_worker.js --port 4173",
         "prepare": "svelte-kit sync || echo ''",
