@@ -55,6 +55,13 @@
     font-display: swap;
     src: url("/fonts/UntitledSerif/ttf/UntitledSerif-Regular-Italic.ttf");
 }
+@font-face {
+    font-family: "Untitled Serif";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/UntitledSerif/ttf/UntitledSerif-Medium-Italic.ttf");
+}
 
 @theme inline {
     --font-sans: "Untitled Sans";
@@ -104,14 +111,11 @@
 
 body {
     background-color: var(--color-theme);
-    @apply overflow-x-clip;
 }
-
 
 *::selection {
-    background-color: rgba(from var(--color-surface-raised) r g b / 100%) ;
+    background-color: rgba(from var(--color-surface-raised) r g b / 100%);
 }
-
 
 * {
     /*outline: solid 0.5px #ff000020 !important;*/

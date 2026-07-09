@@ -7,6 +7,6 @@
     const { children }: Props = $props();
 </script>
 
-<h1 class="block font-serif text-5xl font-bold md:text-8xl ">
+<h2 class="block font-serif text-4xl font-bold md:text-6xl">
     {@render children()}
-</h1>
+</h2>
