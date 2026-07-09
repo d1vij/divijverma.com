@@ -11,8 +11,12 @@
     "workers_dev": true,
     "preview_urls": true,
     "cache": { "enabled": true },
-    "route": {
-        "custom_domain": true,
-        "pattern": "divijverma.com",
-    },
+    "routes": [
+        {
+            "custom_domain": true,
+            "pattern": "divijverma.com",
+            "enabled": true,
+            "previews_enabled": false,
+        },
+    ],
 }
