@@ -10,15 +10,9 @@
     },
     "workers_dev": true,
     "preview_urls": true,
+    "cache": { "enabled": true },
     "route": {
         "custom_domain": true,
         "pattern": "divijverma.com",
     },
-    "d1_databases": [
-        {
-            "binding": "DB",
-            "database_name": "DB",
-            "database_id": "f603ff49-c802-4749-81b7-350fbfc196a8",
-        },
-    ],
 }
