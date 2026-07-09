@@ -37,4 +37,5 @@
         crossorigin=""
     />
 </svelte:head>
+
 {@render children()}

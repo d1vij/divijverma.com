@@ -4,9 +4,10 @@
     type Props = {
         children: Snippet;
     };
+
     const { children }: Props = $props();
 </script>
 
-<h1 class="block font-serif text-5xl font-bold md:text-8xl ">
+<div class={["bg-background w-full h-20 p-2", "border border-border rounded"]}>
     {@render children()}
-</h1>
+</div>

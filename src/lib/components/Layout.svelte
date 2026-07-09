@@ -11,7 +11,7 @@
     const { children }: Props = $props();
 </script>
 
-<section class="flex h-dvh w-dvw flex-col gap-0 p-2 pt-0 md:px-8">
+<section class="flex h-dvh w-dvw flex-col gap-0 p-2 pt-0 text-text-primary md:px-8">
     <div
         class={[
             "size-full rounded-xl rounded-t-none border-2 border-t-0 border-border bg-background",
@@ -19,15 +19,6 @@
             "space-y-8",
         ]}
     >
-        <header>
-            <nav class="flex w-full items-center justify-between gap-1 font-serif">
-                <Asterisk class="block size-5 stroke-text-secondary" />
-                <a href={resolve("/")} class="block font-medium" {@attach vibrateOnClick(50)}
-                    >Divij Verma</a
-                >
-            </nav>
-        </header>
-
         {@render children()}
     </div>
 </section>

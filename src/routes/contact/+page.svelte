@@ -1,20 +1,23 @@
 <script lang="ts">
-    import NonHomeLayout from "$lib/components/NonHomeLayout.svelte";
+    import Layout from "$lib/components/Layout.svelte";
     import E from "$lib/components/E";
     import { ArrowUpRight } from "@lucide/svelte";
 </script>
 
-<NonHomeLayout>
-
+<Layout>
     <E.H1>Contact</E.H1>
 
     <ul class="grid grid-cols-1 gap-4">
-        {#snippet Contact(title: string, content: string, href:string)}
+        {#snippet Contact(title: string, content: string, href: string)}
             <li>
-                <a class="block" href={href} target="_blank">
+                <a class="block" {href} target="_blank">
                     <div class="flex justify-between">
-                        <h2 class="font-serif tracking-wide text-sm font-medium text-text-secondary">{title}</h2>
-                        <ArrowUpRight class="stroke-text-secondary size-4"/>
+                        <h2
+                            class="font-serif text-sm font-medium tracking-wide text-text-secondary"
+                        >
+                            {title}
+                        </h2>
+                        <ArrowUpRight class="size-4 stroke-text-secondary" />
                     </div>
                     <p class="select-all">{content}</p>
                 </a>
@@ -26,4 +29,4 @@
         {@render Contact("Github", "github.com/d1vij", "https://github.com/d1vij")}
         {@render Contact("Linkedin", "linkedin.com/in/d1vij", "https://www.linkedin.com/in/d1vij/")}
     </ul>
-</NonHomeLayout>
+</Layout>
