@@ -38,4 +38,6 @@
     />
 </svelte:head>
 
-{@render children()}
+<div class="relative mx-auto min-h-dvh w-dvw p-4 md:max-w-200 md:py-8">
+    {@render children()}
+</div>

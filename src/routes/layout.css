@@ -32,6 +32,7 @@
     font-display: swap;
     src: url("/fonts/UntitledSerif/ttf/UntitledSerif-Regular.ttf");
 }
+
 @font-face {
     font-family: "Untitled Serif";
     font-style: normal;
@@ -55,6 +56,7 @@
     font-display: swap;
     src: url("/fonts/UntitledSerif/ttf/UntitledSerif-Regular-Italic.ttf");
 }
+
 @font-face {
     font-family: "Untitled Serif";
     font-style: italic;
@@ -69,55 +71,50 @@
     --default-font-family: var(--font-sans);
 }
 
-/* Colors */
 @theme inline {
     /* --- Base --- */
-    --color-theme: #111113;
-    --color-background: #ffffff;
-    --color-surface: #f7f7f8;
-    --color-surface-raised: #ebebec;
-
+    --color-theme: #f5f5f6;
+    --color-background: #111113;
+    --color-surface: #19191c;
+    --color-surface-raised: #212124;
+    --color-highlight: #2a2a2e;
     /* --- Border --- */
-    --color-border: #e4e4e7;
-    --color-border-strong: #d1d1d6;
-
+    --color-border: #34343a;
+    --color-border-strong: #47474e;
     /* --- Typography --- */
-    --color-text-primary: #111113;
-    --color-text-secondary: #3f3f46;
+    --color-text-primary: #f5f5f6;
+    --color-text-secondary: #c7c7cf;
     --color-text-muted: #8c8c99;
-    --color-text-disabled: #c4c4cc;
+    --color-text-disabled: #5e5e66;
     --color-text-on-dark: #ffffff;
-
+    --color-text-on-light: #111113;
     /* --- Accents: Red --- */
     --color-red: #ff3b2f;
-    --color-red-subtle: #fff0ef;
-    --color-red-deep: #c62a1f;
-
+    --color-red-subtle: #2a1613;
+    --color-red-deep: #ff8a80;
     /* --- Accents: Green --- */
     --color-green: #1db954;
-    --color-green-subtle: #edfaf3;
-    --color-green-deep: #14843b;
-
+    --color-green-subtle: #0f2b1c;
+    --color-green-deep: #4ade80;
     /* --- Accents: Blue --- */
     --color-blue: #2563eb;
-    --color-blue-subtle: #eff5ff;
-    --color-blue-deep: #1a44b8;
-
+    --color-blue-subtle: #101d33;
+    --color-blue-deep: #60a5fa;
     /* --- Accents: Amber --- */
     --color-amber: #f59e0b;
-    --color-amber-subtle: #fff8ec;
-    --color-amber-deep: #b96e07;
+    --color-amber-subtle: #2e2008;
+    --color-amber-deep: #fbbf24;
 }
 
 body {
-    background-color: var(--color-theme);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
 }
 
 *::selection {
-    background-color: rgba(from var(--color-surface-raised) r g b / 100%);
+    background-color: --alpha(var(--color-amber-800) / 40%)
 }
 
 * {
-    /*outline: solid 0.5px #ff000020 !important;*/
     scrollbar-width: none;
 }
