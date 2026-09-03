@@ -2,7 +2,12 @@
     import { ArrowUpRight, Link, Mail, MapPin } from "@lucide/svelte";
     import githubIcon from "$lib/assets/icons/github.svg";
     import TextContent from "$lib/components/TextContent.svelte";
+    import Highlight from "$lib/components/text/Highlight.svelte";
 </script>
+
+<head>
+    <title>Hello there !!</title>
+</head>
 
 <div class="mb-8 flex flex-col justify-between md:flex-row">
     <h1 class="mb-4 font-serif text-5xl font-medium">Divij Verma</h1>
@@ -23,8 +28,8 @@
 <TextContent>
     <p>
         I'm an Electronics and Telecommunication undergrad at RSCOE, trying to get into embedded
-        systems. On the side, I build web apps, mess around with data analysis projects, and
-        sometimes write about the stuff i'm doing.
+        systems and VLSI domain. On the side, I build web apps, mess around with data analysis
+        projects, and sometimes write stuff.
     </p>
 
     <ul class="list-none pl-0 [&_a]:flex [&_a]:w-fit [&_a]:items-center [&_a]:gap-1">
@@ -76,7 +81,16 @@
         </li>
     </ul>
 
-    <p>Currently learning C via KNR and computer architecture via CSAPP.</p>
+    <p>
+        My works are stuff working with (but not limited to) React, Svelte, TypeScript; Pandas,
+        Matplotlib (and Seaborn); Arduino C++.
+    </p>
+    <p>
+        <Highlight>
+            Currently learning C via KNR.
+            <!-- and computer architecture via CSAPP. -->
+        </Highlight>
+    </p>
 
     <h2>Featured Projects</h2>
 

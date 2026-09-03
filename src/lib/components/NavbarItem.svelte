@@ -11,7 +11,9 @@
 
     const { href, children }: Props = $props();
 
-    const isActive = $derived(page.url.pathname === href);
+    const isActive = $derived(
+        href === "/" ? page.url.pathname === "/" : page.url.pathname.startsWith(href)
+    );
 </script>
 
 <a
