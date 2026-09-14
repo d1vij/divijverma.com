@@ -1,7 +1,6 @@
 <script lang="ts">
     import { ArrowUpRight, Link, Mail, MapPin } from "@lucide/svelte";
     import TextContent from "$lib/components/TextContent.svelte";
-    import Highlight from "$lib/components/text/Highlight.svelte";
 </script>
 
 <svelte:head>
@@ -85,10 +84,8 @@
         Matplotlib (and Seaborn); Arduino C++.
     </p>
     <p>
-        <Highlight>
-            Currently learning C via KNR.
-            <!-- and computer architecture via CSAPP. -->
-        </Highlight>
+        Currently learning C via KNR.
+        <!-- and computer architecture via CSAPP. -->
     </p>
 
     <!-- <h2>Featured Projects</h2>
