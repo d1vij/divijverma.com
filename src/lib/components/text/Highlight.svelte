@@ -26,10 +26,10 @@
     @reference "tailwindcss";
 
     .highlight {
-        @apply absolute inset-0 -z-1 -m-0.5 rounded-xs;
+        @apply absolute inset-0 -z-1 -m-0.5;
         transform: rotate(var(--data-rotation));
         &[data-varient="yellow"] {
-            background-color: #f2e6a820;
+            background-color: #f2e6a860;
         }
         &[data-varient="green"] {
             background-color: #c3dcbe;

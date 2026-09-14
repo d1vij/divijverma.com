@@ -1,13 +1,12 @@
 <script lang="ts">
     import { ArrowUpRight, Link, Mail, MapPin } from "@lucide/svelte";
-    import githubIcon from "$lib/assets/icons/github.svg";
     import TextContent from "$lib/components/TextContent.svelte";
     import Highlight from "$lib/components/text/Highlight.svelte";
 </script>
 
-<head>
+<svelte:head>
     <title>Hello there !!</title>
-</head>
+</svelte:head>
 
 <div class="mb-8 flex flex-col justify-between md:flex-row">
     <h1 class="mb-4 font-serif text-5xl font-medium">Divij Verma</h1>
@@ -25,9 +24,9 @@
     </a>
 </div>
 
-<TextContent>
+<TextContent class="prose-a:text-text-muted prose-a:decoration-text-muted">
     <p>
-        I'm an Electronics and Telecommunication undergrad at RSCOE, trying to get into embedded
+        I'm an Electronics and Telecommunication undergrad at PCCOE, trying to get into embedded
         systems and VLSI domain. On the side, I build web apps, mess around with data analysis
         projects, and sometimes write stuff.
     </p>
@@ -82,7 +81,7 @@
     </ul>
 
     <p>
-        My works are stuff working with (but not limited to) React, Svelte, TypeScript; Pandas,
+        My work stack mainly includes (but not limited to) React, Svelte, TypeScript; Pandas,
         Matplotlib (and Seaborn); Arduino C++.
     </p>
     <p>
@@ -92,9 +91,8 @@
         </Highlight>
     </p>
 
-    <h2>Featured Projects</h2>
-
-    <div class="h-80 w-full bg-blue/20"></div>
+    <!-- <h2>Featured Projects</h2>
+    <div class="h-80 w-full bg-blue/20"></div> -->
 </TextContent>
 
 <style lang="postcss">

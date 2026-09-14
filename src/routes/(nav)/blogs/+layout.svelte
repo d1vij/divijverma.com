@@ -2,9 +2,9 @@
     const { children } = $props();
 </script>
 
-<head>
-    <title> Blogs by Divij Verma </title>
-</head>
+<svelte:head>
+    <title>Blogs by Divij Verma</title>
+</svelte:head>
 
 <div class="mb-20">
     {@render children()}

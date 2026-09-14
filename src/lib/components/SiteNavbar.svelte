@@ -1,8 +1,4 @@
 <script lang="ts">
-    import { page } from "$app/state";
-    import { resolve } from "$app/paths";
-    import { Home } from "@lucide/svelte";
-
     import NavbarItem from "$lib/components/NavbarItem.svelte";
 </script>
 
@@ -14,7 +10,7 @@
     ]}
 >
     <NavbarItem href="/">Home</NavbarItem>
-    <NavbarItem href="/projects">Projects</NavbarItem>
-    <NavbarItem href="/about">About</NavbarItem>
+    <!-- <NavbarItem href="/projects">Projects</NavbarItem> -->
+    <!-- <NavbarItem href="/about">About</NavbarItem> -->
     <NavbarItem href="/blogs">Blogs</NavbarItem>
 </nav>

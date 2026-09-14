@@ -1,5 +1,4 @@
 <script lang="ts">
-    import TextContent from "$lib/components/TextContent.svelte";
     import Code from "$lib/components/blog/Code.svelte";
     import Header from "$lib/components/blog/BlogHeader.svelte";
 
@@ -10,7 +9,6 @@
     import divijCleaned from "./divijCleaned.json?raw";
 
     import BlogText from "$lib/components/blog/BlogText.svelte";
-    import Heading from "$lib/components/blog/Heading.svelte";
 </script>
 
 <Header created_at={new Date(2026, 9, 22)}>
@@ -21,7 +19,7 @@
 
 <BlogText>
     <section>
-        <Heading depth={2} title="Background" />
+        <h2>Background</h2>
         <p>
             On the day of results, I found this (since deleted) post on reddit which explained the <i
                 >algorithm</i
@@ -43,7 +41,7 @@
         </ol>
         <p>to generate the admit card number and thereby view the results of any student.</p>
 
-        <Heading depth={2} title="Generating the Admit Card Numbers" />
+        <h2>Generating the Admit Card Numbers</h2>
         <p>The admit card is composed of 8 characters.</p>
         <ul>
             <li>
@@ -85,7 +83,7 @@
     </section>
 
     <section>
-        <Heading depth={2} title={"Generating Results"} />
+        <h2>Generating Results</h2>
         <p>
             Then I realised that if I can view the results of <i>any student</i> I could potentially
             view the results of <i>all the students</i>. And what is the easist way to view all the
@@ -124,7 +122,7 @@
     </section>
 
     <section>
-        <Heading depth={2} title={"Cleaning and Compiling the Results"} />
+        <h2>Cleaning and Compiling the Results</h2>
 
         <p>
             The Digilocker's API returns result as a raw JSON object which is then rendered on their
@@ -161,9 +159,9 @@
     </section>
 
     <section>
-        <Heading depth={2} title="The Architecture">
+        <h2>
             The Architecture <sup class="align-super text-xs">(the fun section)</sup>
-        </Heading>
+        </h2>
         <p>
             The whole project is a <i
                 >polyglot <sup>(a fancy way saying I used multiple languages)</sup></i
@@ -180,7 +178,7 @@
         </ol>
 
         <section>
-            <Heading depth={3} title="Scraper"/>
+            <h3>Scraper</h3>
             <p>
                 Written in Typescript and runs in the Bun runtime, contains simple but extensible
                 scraping functions.
@@ -200,7 +198,7 @@
         </section>
 
         <section>
-            <Heading depth={3} title="Result Compiler"/>
+            <h3>Result Compiler</h3>
             <p>
                 Core pipeline written in Python and analysis done using Pandas, it is responsible
                 for all cleaning and data transformations, and is easily extensible to add new
@@ -223,7 +221,7 @@
         </section>
 
         <section>
-            <Heading depth={3} title="App"/>
+            <h3>App</h3>
             <p>
                 A SvelteKit based app which consumes the generated results. Prerenders all routes on
                 build time and is hosted on github pages.
@@ -231,14 +229,13 @@
         </section>
 
         <section>
-            <Heading depth={3} title="Orchestrator"/>
+            <h3>Orchestrator</h3>
             <p>The final piece which coordinates between all other packages.</p>
         </section>
     </section>
     <hr />
 
     <section id="disclaimer">
-        <Heading depth={2} title="The section with Disclaimer" />
         <h2>The section with Disclaimer</h2>
         <p>
             The student names used in this project are fictitious and have been used for

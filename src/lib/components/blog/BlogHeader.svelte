@@ -1,6 +1,4 @@
 <script lang="ts" module>
-    import { Temporal } from "temporal-polyfill";
-    import { DurationFormat } from "@formatjs/intl-durationformat";
     const dateFormatter = new Intl.DateTimeFormat("en-US", {
         dateStyle: "medium",
     });
@@ -8,8 +6,6 @@
 
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import TextContent from "$lib/components/TextContent.svelte";
-    import { CalendarDays, SquarePen } from "@lucide/svelte";
 
     type Props = {
         blog_title: Snippet;
