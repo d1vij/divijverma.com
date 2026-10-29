@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>Hello there !!</title>
+    <title>Divij Verma</title>
 </svelte:head>
 
 <div class="mb-8 flex flex-col justify-between md:flex-row">
@@ -25,9 +25,8 @@
 
 <TextContent class="prose-a:text-text-muted prose-a:decoration-text-muted">
     <p>
-        I'm an Electronics and Telecommunication undergrad at PCCOE, trying to get into embedded
-        systems and VLSI domain. On the side, I build web apps, mess around with data analysis
-        projects, and sometimes write stuff.
+        I'm an Electronics and Telecommunications undergrad at PCCOE. My interests mainly lie in
+        embedded systems, microcontrollers, and how computer systems work. I also build websites.
     </p>
 
     <ul class="list-none pl-0 [&_a]:flex [&_a]:w-fit [&_a]:items-center [&_a]:gap-1">
@@ -77,16 +76,14 @@
                 <Link class="size-3.5" /> linkedin.com/in/d1vij</a
             >
         </li>
+        <li>
+            <a href="https://divijverma.com/resume" target="_blank">
+                <Link class="size-3.5" /> Resume</a
+            >
+        </li>
     </ul>
 
-    <p>
-        My work stack mainly includes (but not limited to) React, Svelte, TypeScript; Pandas,
-        Matplotlib (and Seaborn); Arduino C++.
-    </p>
-    <p>
-        Currently learning C via KNR.
-        <!-- and computer architecture via CSAPP. -->
-    </p>
+    <p>Currently messing around with ESP32 based projects and studying how planes work.</p>
 
     <!-- <h2>Featured Projects</h2>
     <div class="h-80 w-full bg-blue/20"></div> -->
