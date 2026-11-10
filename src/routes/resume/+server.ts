@@ -12,9 +12,8 @@ export const GET: RequestHandler = async ({ fetch, request }) => {
     if (ims) headers.set('If-Modified-Since', ims);
 
     const upstream = await fetch(PDF_URL, {
-        headers,
-        cache: 'no-store',
-        cf: { cacheTtl: 0, cacheEverything: false }
+          headers,
+          cf: { cacheTtl: 0, cacheEverything: false }
     });
 
     const resHeaders = new Headers({
