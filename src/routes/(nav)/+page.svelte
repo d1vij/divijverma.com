@@ -12,21 +12,21 @@
     <a
         href="https://maps.app.goo.gl/bWHawSsbeQUQkkXSA"
         target="_blank"
-        class="iems-center group inline-flex h-fit gap-1 text-xs text-text-muted"
+        class="group inline-flex h-fit items-center gap-1 text-xs text-text-muted"
     >
         <span class="inline-flex items-center gap-1">
             <MapPin class="size-3.5" /> 18.5289, 73.8660
         </span>
         <ArrowUpRight
-            class="transtion-all size-3 duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            class="size-3 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
         />
     </a>
 </div>
 
 <TextContent class="prose-a:text-text-muted prose-a:decoration-text-muted">
     <p>
-        I'm an Electronics and Telecommunications undergrad at PCCOE. My interests mainly lie in
-        embedded systems, microcontrollers, and how computer systems work. I also build websites.
+        I'm an Electronics and Telecommunications undergrad at PCCOE, interested in embedded
+        systems, firmware, PCB design, and how computers work. I also build websites.
     </p>
 
     <ul class="list-none pl-0 [&_a]:flex [&_a]:w-fit [&_a]:items-center [&_a]:gap-1">
@@ -83,7 +83,7 @@
         </li>
     </ul>
 
-    <p>Currently messing around with ESP32 based projects and studying how planes work.</p>
+    <p>Currently messing around with FreeRTOS on the ESP32 and studying how planes work.</p>
 
     <!-- <h2>Featured Projects</h2>
     <div class="h-80 w-full bg-blue/20"></div> -->
