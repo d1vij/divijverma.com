@@ -1,6 +1,8 @@
 import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
+export const prerender = false;
+
 const PDF_URL =
     'https://github.com/d1vij/resume/releases/download/latest/resume.pdf';
 
